@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="demofilereadwriting.android.myapplicationdev.com.p09_gettingmylocations.CheckRecordActivity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/refresh"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:text="Refresh" />
+
+        <TextView
+            android:id="@+id/recordNumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Number of Records: "
+            android:textAlignment="viewStart"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

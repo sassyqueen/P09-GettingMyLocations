@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="demofilereadwriting.android.myapplicationdev.com.p09_gettingmylocations.MainActivity"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Last shown location when Activity started"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/latitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Latitude: " />
+
+        <TextView
+            android:id="@+id/longitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Longtitude: " />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current Coordinates"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/latitudecurrent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Latitude: " />
+
+        <TextView
+            android:id="@+id/longitudecurrent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Longtitude: " />
+
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="345dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/startdetector"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Start Detector" />
+
+                <Button
+                    android:id="@+id/stopdetector"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Stop Detector" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/checkrecords"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Check Records" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
